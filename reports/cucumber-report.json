@@ -1,0 +1,239 @@
+[
+  {
+    "description": "    Como usuario del sistema\n    Quiero poder iniciar sesión en el sitio\n    Para acceder a las funcionalidades protegidas",
+    "elements": [
+      {
+        "description": "",
+        "id": "funcionalidad-de-login;login-exitoso-con-credenciales-válidas",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login exitoso con credenciales válidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 242264500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que el usuario está en la página de login",
+            "match": {
+              "location": "stepDefinition\\step.login.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2279880900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "el usuario ingresa el nombre de usuario \"tomsmith\"",
+            "match": {
+              "location": "stepDefinition\\step.login.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35785199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "el usuario ingresa la contraseña \"SuperSecretPassword!\"",
+            "match": {
+              "location": "stepDefinition\\step.login.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16011800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "el usuario hace clic en el botón de login",
+            "match": {
+              "location": "stepDefinition\\step.login.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 377607900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "debería ver el mensaje \"You logged into a secure area!\"",
+            "match": {
+              "location": "stepDefinition\\step.login.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53566900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "funcionalidad-de-login;login-fallido-con-credenciales-inválidas",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login fallido con credenciales inválidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 247661799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que el usuario está en la página de login",
+            "match": {
+              "location": "stepDefinition\\step.login.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2080208899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "ingresa usuario no valido y presiona el botón \"Login\"",
+            "match": {
+              "location": "stepDefinition\\step.login.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 408836800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "debe permanecer en la página de login",
+            "match": {
+              "location": "stepDefinition\\step.login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56488599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "debe ver mensaje de error de credenciales inválidas",
+            "match": {
+              "location": "stepDefinition\\step.login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5201799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "funcionalidad-de-login;login-fallido-con-alguna-credencial-vacia",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Login fallido con alguna credencial vacia",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 237697099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que el usuario está en la página de login",
+            "match": {
+              "location": "stepDefinition\\step.login.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2138228399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "ingresa usuario \"pepito2\" y clave \"\" y presiona el botón \"Login\"",
+            "match": {
+              "location": "stepDefinition\\step.login.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386775999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "debe permanecer en la página de login",
+            "match": {
+              "location": "stepDefinition\\step.login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52755599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "debe ver mensaje de error de credenciales inválidas",
+            "match": {
+              "location": "stepDefinition\\step.login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7545499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "funcionalidad-de-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Funcionalidad de Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
